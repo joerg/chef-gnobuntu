@@ -1,0 +1,20 @@
+# Intro
+
+This cookbook is intended as a kind of tasksel replacement to install a GNOME Desktop from a Ubuntu base system. Basically it installs everything tasksel would when selecting "ubuntu desktop" but replaces all Unity stuff with GNOME Shell.
+
+# Usage
+
+This cookbook is intended for use with Ubuntu 12.04 Precise. I would recomend Sandwich (https://github.com/sometimesfood/sandwich) for achieving the fastest results.
+Install a Ubuntu 12.04 base system with no other tasks or packages selected. I used the alternate installer for doing so, using a preseed file should also be possible. Next install Chef and Sandwich and run it against this cookbook. You will need apt-repo ( https://github.com/sometimesfood/chef-apt-repo ) for installing shell extensions.
+
+# What this does not do
+
+This cookbook does not do any configuration at all. It just installes the necessary software for running the GNOME Desktop and removes any traces of unity, avahi and cannonical stuff that is not needed.
+
+# Why all this
+
+Unity may look nice, but its backend is just horrible. In my eyes it is just broken by design. The GNOME shell offers a lot of possiblities and with all those extensions even DAU users will have no problems using it. 
+
+## Attributes
+
+Pretty much straight forward. More documentation maybe coming...
